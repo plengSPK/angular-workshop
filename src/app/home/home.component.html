@@ -1,16 +1,18 @@
-<div class="album py-5 bg-light">
+<div class="album py-4 bg-light">
   <div class="container">
+    <!-- search -->
     <div class="row justify-content-end searchBar">
       <div class="form-group">
         <input type="text" class="form-control" id="searchTerm" placeholder="Search" (keyup)="updateSearch($event.target.value)"/>
       </div>
     </div>
+    <!-- article card -->
     <div class="row">
       <div class="col-md-4" *ngFor="let article of articleListFilter">
         <article-card [articleData]="article"></article-card>
       </div>
     </div>
-    <!-- pager -->
+    <!-- paging -->
     <nav aria-label="Page navigation example">
       <ul *ngIf="page.pages" class="pagination justify-content-center">
         <li [ngClass]="{disabled:page.currentPage === 1}" class="page-item">
