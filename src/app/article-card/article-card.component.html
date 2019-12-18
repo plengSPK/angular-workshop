@@ -1,0 +1,13 @@
+<div class="card mb-4 shadow-sm">        
+    <img src="{{articleData.urlToImage}}" class="img-fluid">
+    <div class="card-body">
+      <p class="card-text">{{articleData.title}}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-secondary" (click)="OpenDetail()">View</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        </div>
+        <small class="text-muted">{{articleData.publishedAt | relativeTime}}</small>
+      </div>
+    </div>
+</div>

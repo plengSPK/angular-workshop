@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RelativeTimePipe } from './pipes/relative-time.pipe';
 import { DefaultIMGDirective } from './directives/default-img.directive';
+import { ArticleCardComponent } from './article-card/article-card.component';
+import { ArticleDetailComponent } from './article-card/article-detail/article-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DefaultIMGDirective } from './directives/default-img.directive';
     HeaderComponent,
     HomeComponent,
     RelativeTimePipe,
-    DefaultIMGDirective
+    DefaultIMGDirective,
+    ArticleCardComponent,
+    ArticleDetailComponent
   ],
   imports: [
     BrowserModule,
